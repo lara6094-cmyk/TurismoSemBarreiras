@@ -1,0 +1,38 @@
+/* Padronização visual compartilhada — cabeçalho, navegação e rodapé */
+.top-bar {min-height:42px!important;height:auto!important;background:#f5f5f5!important;border-bottom:1px solid #ddd!important;font-size:14px!important}
+.top-container {width:94%!important;max-width:1200px!important;min-height:42px!important;height:auto!important;margin:auto!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:20px!important}
+.telefone,.links-topo {display:flex;align-items:center;gap:8px;font-size:14px!important}
+.links-topo {gap:28px}.links-topo a,.telefone span {font-size:14px!important;color:#444}
+.telefone img {width:20px!important;height:20px!important;object-fit:contain}
+.header {background:#fff!important;border-bottom:1px solid #ddd!important}
+.header-container {width:94%!important;max-width:1200px!important;min-height:82px!important;height:auto!important;padding:8px 0!important;margin:auto!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:20px!important}
+.logo-area {display:flex!important;align-items:center!important;gap:12px!important;text-decoration:none!important}
+.logo-area > img {width:55px!important;height:55px!important;object-fit:contain!important}
+.logo-text h1 {font-family:Arial,Helvetica,sans-serif!important;font-size:24px!important;line-height:1.2!important;margin:0!important;color:#0c0636!important;font-weight:700!important}
+.logo-text h1 span {color:#008f92!important}
+.logo-text p {font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:1.4!important;color:#555!important;margin:4px 0 0!important}
+.btn-login {display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:46px!important;height:auto!important;padding:8px 18px!important;border:2px solid #ddd!important;border-radius:25px!important;background:white!important;color:#0c0636!important;font:700 14px Arial,Helvetica,sans-serif!important;text-decoration:none!important;white-space:nowrap!important}
+.btn-login img {width:20px!important;height:20px!important;object-fit:contain!important;display:block!important}
+.btn-login:hover {background:#f4fafa!important;border-color:#009fa3!important}
+.menu-container {height:auto!important;min-height:64px!important;background:#fff!important;border-bottom:1px solid #ddd!important;overflow-x:auto!important}
+.menu-container #menu {box-sizing:border-box!important;width:94%!important;max-width:1200px!important;min-height:64px!important;height:auto!important;margin:0 auto!important;padding:0!important;display:flex!important;flex-direction:row!important;align-items:stretch!important;justify-content:flex-start!important;gap:24px!important;overflow:visible!important}
+.menu-container #menu a {box-sizing:border-box!important;min-height:64px!important;height:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important;padding:7px 0!important;position:relative!important;border:0!important;border-bottom:3px solid transparent!important;color:#444!important;font:600 13px Arial,Helvetica,sans-serif!important;text-decoration:none!important;white-space:nowrap!important}
+.menu-container #menu a img {width:21px!important;height:21px!important;object-fit:contain!important}
+.menu-container #menu a .icone-inicio {font-size:21px!important;line-height:21px!important}
+.menu-container #menu a.active,.menu-container #menu a[aria-current="page"] {color:#008f92!important;border-bottom-color:#008f92!important}
+.menu-container #menu a.active::after {content:none!important}
+.menu-container #menu a:hover {color:#008f92!important}
+footer {background:#0c0636!important;color:#fff!important;padding:48px 0!important}
+footer .footer-content {width:94%!important;max-width:1200px!important;margin:auto!important;padding:0!important;display:grid!important;grid-template-columns:2fr 1fr 1.2fr 1.5fr!important;gap:35px!important}
+footer .footer-content h3 {display:flex!important;align-items:center!important;gap:9px!important;color:#fff!important;font-size:20px!important;line-height:1.4!important}
+footer .footer-content h3 img {width:40px!important;height:40px!important;object-fit:contain!important}
+footer .footer-content h4 {color:#9fd86b!important;font-size:17px!important;margin-bottom:15px!important}
+footer .footer-content p,footer .footer-content a {color:#fff!important;font-size:15px!important;line-height:1.65!important}
+footer .footer-content a {display:block!important;margin-bottom:9px!important}
+footer .footer-content a:hover {color:#9fd86b!important;text-decoration:underline!important}
+footer .footer-logo p {max-width:300px!important;margin-top:12px!important}
+@media(max-width:900px){footer .footer-content{grid-template-columns:1fr 1fr!important}.menu-container #menu{width:max-content!important;min-width:94%!important;padding:0 3%!important;margin:0!important}}
+@media(max-width:650px){.top-container{flex-wrap:wrap!important;justify-content:center!important;padding:6px 0!important}.links-topo{gap:12px!important}.header-container{min-height:78px!important}.logo-area > img{width:45px!important;height:45px!important}.logo-text h1{font-size:18px!important}.logo-text p{font-size:12px!important}.btn-login{font-size:12px!important;padding:8px 10px!important}.btn-login img{width:17px!important;height:17px!important}footer .footer-content{grid-template-columns:1fr!important;gap:28px!important}}
+
+/* Ícone de início consistente em todas as páginas */
+.menu-container #menu a.icone-inicio img, .menu-container #menu a[href="Home.html"] > img[src="assets/casa.png"] {width:21px!important;height:21px!important;object-fit:contain!important;image-rendering:auto!important;}
